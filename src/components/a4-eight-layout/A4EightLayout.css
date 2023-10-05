@@ -1,0 +1,17 @@
+/* A4サイズに8枚のカードを配置 */
+.sheet {
+  width: 210mm;
+  height: 297mm;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  page-break-after: always;
+}
+
+.block {
+  width: calc(210mm / 2);
+  height: calc(297mm / 4);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
